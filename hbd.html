@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Dancing Script', cursive;
+      background-color: #800080;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-weight: 700; /* Make all text bold */
+    }
+
+    .card {
+      background-color: #dda0dd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      opacity: 0;
+    }
+
+    .birthday {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    .additional-images {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    /* Picture template styles */
+    .photo-template {
+      margin: 20px auto;
+      padding: 12px;
+      background: linear-gradient(135deg, #ff69b4, #dda0dd);
+      border-radius: 16px;
+      max-width: 420px;
+    }
+
+    .photo-frame {
+      background: #fff;
+      border-radius: 12px;
+      padding: 8px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .photo-caption {
+      margin-top: 8px;
+      font-size: 1.1rem;
+      color: #5a2d5a;
+    }
+
+    .additional-images img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .text h1 {
+      color: #ff69b4;
+      font-weight: 800; /* Extra bold heading */
+    }
+
+    .text p {
+      line-height: 1.6;
+      color: #333;
+      font-weight: 600; /* Slightly softer bold for paragraphs */
+    }
+
+    .muted {
+      font-style: italic;
+      color: #555;
+    }
+
+    audio {
+      margin-top: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://github.com/DzarelDeveloper/Img/blob/main/ulangtahun.jpg?raw=true" alt="Birthday" class="birthday" />
+
+    <div class="additional-images">
+      <img src="https://via.placeholder.com/150x150/FFB6C1/000000?text=Birthday+Cake" alt="Birthday Cake" />
+      <img src="https://via.placeholder.com/150x150/FFD700/000000?text=Balloons" alt="Balloons" />
+      <img src="https://via.placeholder.com/150x150/FF69B4/000000?text=Hearts" alt="Hearts" />
+    </div>
+
+    <!-- Picture Template (replace the image src with your photo) -->
+    <div class="photo-template">
+      <div class="photo-frame">
+        <img src="C:\Users\Christian\Downloads\fa53ab56-dd3d-4db9-9c9d-39570b4ea712 (1).jpg" alt="Our Photo" />
+      </div>
+      <div class="photo-caption">Our favorite picture💜</div>
+    </div>
+
+    <div class="text">
+      <h1>Hi Babyyyyy 😚!</h1>
+      <p>
+        Happy special birthday! Sorry ito lang gift ko hehe, I love you so much babyy 🫶🏻
+        <br /><br />
+        Hindi ko inexpect na aabot tayo sa ganitong part ng buhay natin. Ikaw yung may birthday, pero parang ako yung nakatanggap ng pinakamagandang regalo dahil ibinigay ka sa’kin. Salamat, babyyy.
+        <br /><br />
+        Sa araw na ’to, gusto ko lang ipaalala kung gaano ka kahalaga sa buhay ko. Simula nung dumating ka, mas naging makulay, mas masaya, at mas puno ng pagmamahal ang bawat araw ko.
+        <br /><br />
+        Sa mga pinagdaanan natin ang maraming alaala at karanasan, at bawat isa doon ay mas naging special nung dahil dumating ka.
+        <br /><br />
+        Nawa’y ang taong ito ay mapuno ng saya, tagumpay, at pagmamahal. Lagi lang akong nandito para sa’yo. Happy birthday, babyyy ko💜
+      </p>
+      <p class="muted">— Babyyyy —</p>
+    </div>
+
+    <!-- Optional background music -->
+    <audio controls>
+      <source src="C:\Users\Christian\Downloads\The Ridleys - Be with you (Lyrics).mp3" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const card = document.querySelector('.card');
+      card.style.transition = 'opacity 2s';
+      setTimeout(() => (card.style.opacity = '1'), 100);
+    });
+  </script>
+</body>
+</html>
